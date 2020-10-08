@@ -13,6 +13,7 @@ class TopUp extends Component {
     state = {
         values: []
     }
+    // thi.state.topup && this.state.topup
     getTopUp() {
         Axios.get('https://zwalletapi.herokuapp.com/api/transfer').then((res) => {
             this.setState({ values: res.data.values });
